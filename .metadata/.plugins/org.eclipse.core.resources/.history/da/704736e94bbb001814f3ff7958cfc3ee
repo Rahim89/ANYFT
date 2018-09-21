@@ -1,0 +1,34 @@
+package com.springmvc.DAOImpl;
+
+import java.util.List;
+
+import com.springmvc.Beans.Transportation;
+import com.springmvc.DAO.TransportationDAO;
+
+public class TransportationDAOImpl implements TransportationDAO {
+
+	@Override
+	public int addTransportation(Transportation transport) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Transportation> getAllTransportation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Transportation getTransportationByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Transportation getTransportationByTypeLicense(String license) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

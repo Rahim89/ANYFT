@@ -1,0 +1,16 @@
+package com.anyft.DAOImpl;
+
+import java.util.List;
+
+import com.anyft.Beans.TourPackage;
+import com.anyft.DAO.TourPackageDAO;
+
+public class TourPackageDAOImpl implements TourPackageDAO {
+
+	@Override
+	public List<TourPackage> getAllTourPackage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

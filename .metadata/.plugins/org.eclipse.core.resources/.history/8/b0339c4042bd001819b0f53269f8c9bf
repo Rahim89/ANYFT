@@ -1,0 +1,64 @@
+import java.util.List;
+
+import org.junit.Test;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springmvc.Beans.Users;
+import com.springmvc.DAOImpl.UsersDAOImpl;
+
+import org.junit.Assert;
+
+
+public class UsersTest {
+	Users user1 = new Users();
+	@Autowired
+	private UsersDAOImpl userDAO;
+	
+	
+	@Test
+	
+	
+	public void testAddUsers() {
+		
+		
+		
+		
+		user1.setAddress("184 Queens Blvd");
+		
+		
+		user1.setCountry("Senegal");
+		
+		
+		user1.setEmail("malick@gmail.com");
+		
+		
+		user1.setFirstName("Abdourahim");
+		
+		
+		user1.setLastName("Diallo");
+		
+		
+		user1.setPassword("password");
+		
+		
+		user1.setPhoneNo("456435321");
+		
+		
+		user1.setUserName("rahim");
+		
+		
+		int result = userDAO.addUser(user1);
+		
+		
+
+		
+		Assert.assertEquals(1,result);
+		
+		
+		
+	}
+	
+	
+
+}

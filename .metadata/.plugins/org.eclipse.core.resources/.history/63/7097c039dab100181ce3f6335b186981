@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+</head>
+<body>
+	<form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br>
+    Address:<br>
+    <input type="text" name="address" value="address">
+    <br>
+    Email:<br>
+    <input type="email" name="email" value="email">
+    <br>
+    Country:<br>
+    <input type="text" name="country" value="country">
+    <br>
+    Phone Number:<br>
+    <input type="tel" name="phoneNo" value="phone number">
+    <br>
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+</body>
+</html>

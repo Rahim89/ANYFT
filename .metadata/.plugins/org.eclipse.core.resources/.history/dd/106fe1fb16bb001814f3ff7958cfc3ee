@@ -1,0 +1,39 @@
+package com.springmvc.Controller;
+
+import java.util.List;
+
+import com.springmvc.Beans.TypeLicense;
+import com.springmvc.Beans.Users;
+import com.springmvc.DAO.TypeLicenseDAO;
+import com.springmvc.DAO.UsersDAO;
+import com.springmvc.DAOImpl.TypeLicenseDAOImpl;
+import com.springmvc.DAOImpl.UsersDAOImpl;
+
+public class Runner {
+
+	public static void main(String[] args) {
+//		UsersDAO userDAO = new UsersDAOImpl();
+//		
+//		Users user = new Users();
+//		
+//		user.setUserName("Raul");
+//		user.setPassword("coolPass");
+//		user.setFirstName("Malick");
+//		user.setLastName("Diatta");
+//		user.setAddress("184 Queens Blvd");
+//		user.setEmail("malick@gmail.com");
+//		user.setPhoneNo("456435321");
+//		user.setCountry("Mali");
+//		
+//		Users userlist= userDAO.getUsersByUsername(user.getUserName() );
+//		//System.out.println(userDAO.addUser(user));
+//		System.out.println(userlist);
+	}
+	
+	TypeLicenseDAO licenseDAO = new TypeLicenseDAOImpl();
+	
+	TypeLicense license = new TypeLicense();
+	
+	li
+			
+}

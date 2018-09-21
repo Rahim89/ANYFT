@@ -1,0 +1,27 @@
+package com.springmvc.Controller;
+
+import com.springmvc.Beans.Users;
+import com.springmvc.DAO.UsersDAO;
+import com.springmvc.DAOImpl.UsersDAOImpl;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		UsersDAO userDAO = new UsersDAOImpl();
+		
+		Users user = new Users();
+		
+		user.setUserName("Raul");
+		user.setPassword("coolPass");
+		user.setFirstName("Malick");
+		user.setLastName("Diatta");
+		user.setAddress("184 Queens Blvd");
+		user.setEmail("malick@gmail.com");
+		user.setPhoneNo("456435321");
+		user.setCountry("Mali");
+		
+		System.out.println(userDAO.addUser(user));
+		userDAO.getUsersByUsername("rahim");
+	}
+
+}

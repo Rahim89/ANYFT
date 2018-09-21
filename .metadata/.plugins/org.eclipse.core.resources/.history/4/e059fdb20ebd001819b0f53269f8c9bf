@@ -1,0 +1,46 @@
+package com.springmvc.Beans;
+
+public class Sites {
+	
+	private int siteId;
+	private String siteName;
+	private String mainPicture;
+	private String locations;
+	private int timeneed;
+	public int getSiteId() {
+		return siteId;
+	}
+	public void setSiteId(int siteId) {
+		this.siteId = siteId;
+	}
+	public String getSiteName() {
+		return siteName;
+	}
+	public void setSiteName(String siteName) {
+		this.siteName = siteName;
+	}
+	public String getMainPicture() {
+		return mainPicture;
+	}
+	public void setMainPicture(String mainPicture) {
+		this.mainPicture = mainPicture;
+	}
+	public String getLocations() {
+		return locations;
+	}
+	public void setLocations(String locations) {
+		this.locations = locations;
+	}
+	public int getTimeneed() {
+		return timeneed;
+	}
+	public void setTimeneed(int timeneed) {
+		this.timeneed = timeneed;
+	}
+	@Override
+	public String toString() {
+		return "Sites [siteId=" + siteId + ", siteName=" + siteName + ", mainPicture=" + mainPicture + ", locations="
+				+ locations + ", timeneed=" + timeneed + "]";
+	}
+	
+}

@@ -1,0 +1,87 @@
+package com.springmvc.DAOImpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.springmvc.Beans.Pictures;
+import com.springmvc.Beans.Sites;
+import com.springmvc.DAO.OracleConnection;
+import com.springmvc.DAO.PicturesDAO;
+
+public class PicturesDAOImpl implements PicturesDAO {
+
+	@Override
+	public int addPicture(Pictures picture) {
+		int key =0;
+		String sql= "INSERT INTO pictures(pictureName,siteId,locationFile) VALUES(?,?,?)";
+		Connection conn=null;
+		String[] generatedkey = {"PICTUREID"};
+		try { 
+				OracleConnection c = new OracleConnection();
+				conn = c.getConnection();
+				
+				PreparedStatement ps = conn.prepareStatement(sql,generatedkey);
+				
+				ps.setString(1, picture.getPictureName());
+				ps.setInt(2, picture.getSiteId());
+				ps.setString(3, picture.getLocationFile());
+				
+		
+				ps.executeUpdate();
+				ResultSet rs= ps.getGeneratedKeys();
+				
+				if(rs.next()){
+					
+					key=rs.getInt(1);
+					picture.setSiteId(key);
+					
+				}
+				
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+
+				e.printStackTrace();
+			}
+		}
+		return key;
+	}
+
+	@Override
+	public List<Pictures> getAllPictures() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Pictures getPictureByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void editPicture(Pictures picture) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deletePicture(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Pictures> getAllPicturesBySites(Pictures picture, Sites site) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="GitCommitMessageComponent">
+		<list key="/Users/Rahim/Desktop/perschols/CaseStudy/.git">
+			<item value="false"/>
+			<item value="Rahim &lt;Rahim@abdouraallosmbp&gt;"/>
+			<item value="first commit"/>
+			<item value="Rahim &lt;Rahim@abdouraallosmbp&gt;"/>
+			<item value="0000000000000000000000000000000000000000"/>
+			<item value="0"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

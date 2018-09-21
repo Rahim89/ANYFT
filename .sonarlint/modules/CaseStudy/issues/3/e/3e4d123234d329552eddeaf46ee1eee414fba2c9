@@ -1,0 +1,25 @@
+
+—squid:UselessImportCheck"QRemove this unused import 'org.springframework.web.bind.annotation.RequestParam'.(Â¬À·ùÿÿÿÿ8²°ÅŞ,Hı5RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ŞĞşÁß,H¤6RMINORZ
+CODE_SMELL
+squid:UselessImportCheck"IRemove this unused import 'org.springframework.validation.BindingResult'.(‹¶¸ùÿÿÿÿ8ƒÈóÉŞ,Hû5RMINORZ
+CODE_SMELL
+ˆsquid:S1488V"[Immediately return this expression instead of assigning it to the temporary variable "mav".(ßˆH†6RMINORZ
+CODE_SMELL
+ysquid:UselessImportCheck	"3Remove this unused import 'javax.validation.Valid'.(æ¤ñ÷úÿÿÿÿ8½»Ó—Ş,Hş5RMINORZ
+CODE_SMELL
+squid:S1488q"[Immediately return this expression instead of assigning it to the temporary variable "mav".(ÒŠå˜şÿÿÿÿHÿ5RMINORZ
+CODE_SMELL
+squid:S1488w"[Immediately return this expression instead of assigning it to the temporary variable "mav".(­êİ¨üÿÿÿÿH‡6RMINORZ
+CODE_SMELL
+~squid:CommentedOutCodeLineä"<This block of commented-out lines of code should be removed.(‚Â”ıøÿÿÿÿHü5RMAJORZ
+CODE_SMELL
+squid:S1488Ï"[Immediately return this expression instead of assigning it to the temporary variable "mav".(ûÿÖÊúÿÿÿÿH6RMINORZ
+CODE_SMELL
+lsquid:S1854f":Remove this useless assignment to local variable "dbuser".(ÂËùÿÿÿÿH‚6RMAJORZ
+CODE_SMELL
+…squid:CommentedOutCodeLineæ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8‚ÜÊÌİ,H„6RMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊíçüÿÿÿÿH€6RMINORZ
+CODE_SMELL

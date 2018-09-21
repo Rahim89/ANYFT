@@ -1,0 +1,40 @@
+package com.springmvc.Beans;
+
+public class Pictures {
+	
+	private int pictureId;
+	private String pictureName;
+	private int siteId;
+	private String locationFile;
+	public int getPictureId() {
+		return pictureId;
+	}
+	public void setPictureId(int pictureId) {
+		this.pictureId = pictureId;
+	}
+	public String getPictureName() {
+		return pictureName;
+	}
+	public void setPictureName(String pictureName) {
+		this.pictureName = pictureName;
+	}
+	public int getSiteId() {
+		return siteId;
+	}
+	public void setSiteId(int siteId) {
+		this.siteId = siteId;
+	}
+	public String getLocationFile() {
+		return locationFile;
+	}
+	public void setLocationFile(String locationFile) {
+		this.locationFile = locationFile;
+	}
+	@Override
+	public String toString() {
+		return "Pictures [pictureId=" + pictureId + ", pictureName=" + pictureName + ", siteId=" + siteId
+				+ ", locationFile=" + locationFile + "]";
+	}
+	
+
+}

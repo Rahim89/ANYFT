@@ -1,0 +1,40 @@
+package com.springmvc.DAOImpl;
+
+import java.util.List;
+
+import com.springmvc.Beans.Sites;
+import com.springmvc.DAO.SitesDAO;
+
+public class SitesDAOImpl implements SitesDAO {
+
+	@Override
+	public int addSites(Sites site) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Sites> getAllSites() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Sites getSiteByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateSite(Sites site) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteSite(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

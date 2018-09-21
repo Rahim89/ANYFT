@@ -1,0 +1,7 @@
+package com.springmvc.Validator;
+
+import javax.validation.ConstraintValidator;
+
+public class FieldsValueMatchValidator implements ConstraintValidator<A, T> {
+
+}

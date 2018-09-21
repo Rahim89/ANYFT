@@ -1,0 +1,31 @@
+package com.springmvc.Beans;
+
+public class PictureBySite {
+	
+	private String siteName;
+	private String pictureName;
+	
+	private String locationfile;
+	public String getSiteName() {
+		return siteName;
+	}
+	public void setSiteName(String siteName) {
+		this.siteName = siteName;
+	}
+	public String getPictureName() {
+		return pictureName;
+	}
+	public void setPictureName(String pictureName) {
+		this.pictureName = pictureName;
+	}
+	
+	public String getLocationfile() {
+		return locationfile;
+	}
+	public void setLocationfile(String locationfile) {
+		this.locationfile = locationfile;
+	}
+	
+	
+
+}

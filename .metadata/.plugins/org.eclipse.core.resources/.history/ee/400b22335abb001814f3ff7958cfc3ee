@@ -1,0 +1,85 @@
+package com.springmvc.DAOImpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.springmvc.Beans.TypeLicense;
+import com.springmvc.Beans.TypeTransportation;
+import com.springmvc.DAO.OracleConnection;
+import com.springmvc.DAO.TypeTransportationDAO;
+
+public class TypeTransportationDAOImpl implements TypeTransportationDAO {
+
+	@Override
+	public boolean addTypeTransportation(TypeTransportation typeTransport) {
+		
+		boolean itWorked = false;
+		String sql = "INSERT INTO TYPETRANSPORTATION(typeTranspName, description,typeLicense) values(?,?,?)";
+		Connection conn=null;
+		
+		try {
+			OracleConnection c = new OracleConnection();
+			conn = c.getConnection();
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ps.setString(1, typeTransport.getTypeTranspName());
+			ps.setString(2, typeTransport.getDescription());
+			ps.setString(3, typeTransport.getTypeLicenseName());
+			
+			itWorked = ps.executeUpdate() > 0 ? true : false;
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+
+				e.printStackTrace();
+			}
+		}
+		return itWorked;
+	}
+
+	@Override
+	public TypeTransportation getTypeTransportationByName(String name) {
+		
+		Connection conn = null;
+		TypeTransportation typeTransport = null;
+		String sql = "SELECT * FROM TYPETRANSPORTATION WHERE typeTranspName = ?";
+		
+		try {
+			OracleConnection c = new OracleConnection();
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, name);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				typeTransport = new TypeTransportation();
+				
+				typeTransport.setTypeTranspName(rs.getString("typeTranspName"));
+				typeTransport.setDescription(rs.getString("description"));
+				typeTransport.setTypeLicenseName(rs.getString("typeLicense"));
+			}
+		}catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		return typeTransport;
+		
+		
+
+	}
+
+}

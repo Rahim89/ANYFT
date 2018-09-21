@@ -1,0 +1,75 @@
+package com.springmvc.DAOImpl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.springmvc.Beans.Transportation;
+import com.springmvc.DAO.OracleConnection;
+import com.springmvc.DAO.TransportationDAO;
+
+public class TransportationDAOImpl implements TransportationDAO {
+
+	@Override
+	public int addTransportation(Transportation transport) {
+
+		int key =0;
+		String sql= "INSERT INTO Transportation(transportationName, transportationCapacity,comments,typeTranspName) VALUES(?,?,?,?)";
+		Connection conn=null;
+		String[] generatedkey = {"TRANSPORTATIONID"};
+		try { 
+				OracleConnection c = new OracleConnection();
+				conn = c.getConnection();
+				
+				PreparedStatement ps = conn.prepareStatement(sql,generatedkey);
+				
+				ps.setString(1, transport.getTransportationName());
+				ps.setInt(2, transport.getTransportationCapacity());
+				ps.setString(3, transport.getComments());
+				ps.setString(4, transport.getTypeTranspName());
+				
+				ps.executeUpdate();
+				ResultSet rs= ps.getGeneratedKeys();
+				
+				if(rs.next()){
+					
+					key=rs.getInt(1);
+					transport.setTransportationId(key);
+					
+				}
+				
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return key;
+	}
+
+	@Override
+	public List<Transportation> getAllTransportation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Transportation getTransportationByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Transportation getTransportationByTypeLicense(String license) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,23 @@
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Rollback;
+
+import com.springmvc.DAO.UsersDAO;
+
+public class UsersTest {
+	
+	@Autowired
+	private UsersDAO userDAO;
+	
+	@Test
+	@Transactional
+	//@Rollback(true)
+	
+	public void testAddUsers() {
+		
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,70 @@
+import java.util.List;
+
+import org.junit.Test;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springmvc.Beans.Users;
+import com.springmvc.DAO.UsersDAO;
+import com.springmvc.DAOImpl.UsersDAOImpl;
+
+import org.junit.Assert;
+
+
+public class UsersTest {
+	
+	@Autowired
+	private UsersDAOImpl userDAO;
+	
+	
+	@Test
+	
+	
+	public void testAddUsers() {
+		
+		Users user1 = new Users();
+		//Users user2 = new Users();
+		
+		user1.setAddress("184 Queens Blvd");
+		//user2.setAddress("76 16th Street");
+		
+		user1.setCountry("Senegal");
+		//user2.setCountry("United States");
+		
+		user1.setEmail("malick@gmail.com");
+		//user2.setEmail("jess@gmail.com");
+		
+		user1.setFirstName("Abdourahim");
+		//user2.setFirstName("jessica");
+		
+		user1.setLastName("Diallo");
+		//user2.setLastName("cummings");
+		
+		user1.setPassword("password");
+		//user2.setPassword("password");
+		
+		user1.setPhoneNo("456435321");
+		//user2.setPhoneNo("456435321");
+		
+		user1.setUserId(103);
+		//user2.setUserId(1);
+		
+		user1.setUserName("rahim");
+		//user2.setUserName("jessie");
+		
+		userDAO.addUser(user1);
+		//userDAO.addUser(user2);
+		
+//		List<Users> users = userDAO.getAllUsers();
+//		
+//		Assert.assertEquals(1, users.size());
+		
+		Assert.assertEquals(103,user1.getUserId());
+		
+		
+		
+	}
+	
+	
+
+}

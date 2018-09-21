@@ -1,0 +1,7 @@
+package com.springmvc.DAO;
+
+public interface SitesDAO {
+	
+	public List<Sites> getAllSites();
+
+}

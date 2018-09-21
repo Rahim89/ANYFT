@@ -1,0 +1,178 @@
+package com.springmvc.DAOImpl;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.springmvc.Beans.Sites;
+import com.springmvc.Beans.Sites;
+import com.springmvc.DAO.OracleConnection;
+import com.springmvc.DAO.SitesDAO;
+
+public class SitesDAOImpl extends OracleConnection implements SitesDAO {
+
+	@Override
+	public int addSites(Sites site) {
+		int key =0;
+		String sql= "INSERT INTO sites(siteName,mainPicture,locations,timeneed;) VALUES(?,?,?,?)";
+		Connection conn=null;
+		String[] generatedkey = {"SITEID"};
+		try { 
+				OracleConnection c = new OracleConnection();
+				conn = c.getConnection();
+				
+				PreparedStatement ps = conn.prepareStatement(sql,generatedkey);
+				
+				ps.setString(1, site.getSiteName());
+				ps.setString(2, site.getMainPicture());
+				ps.setString(3, site.getLocations());
+				ps.setInt(4, site.getTimeneed());
+		
+				ps.executeUpdate();
+				ResultSet rs= ps.getGeneratedKeys();
+				
+				if(rs.next()){
+					
+					key=rs.getInt(1);
+					site.setSiteId(key);
+					
+				}
+				
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+
+				e.printStackTrace();
+			}
+		}
+		return key;	}
+
+	@Override
+	public List<Sites> getAllSites() {
+
+		Connection conn = null;
+		List<Sites> sitelist = new ArrayList<Sites>();
+		
+		String sql = "SELECT * FROM SITES";
+		
+		try {
+			
+			OracleConnection c = new OracleConnection();
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				
+				Sites site = new Sites();
+				
+				site.setSiteName(rs.getString("siteName"));
+				site.setMainPicture(rs.getString("mainPicture"));
+				site.setLocations(rs.getString("locations"));
+				site.setTimeneed(rs.getInt("timeneed"));
+				
+				sitelist.add(site);
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return sitelist;
+	}
+
+	@Override
+	public Sites getSiteByName(String name) {
+
+		Connection conn = null;
+		Sites site =null;
+		String sql = "SELECT * FROM SITES WHERE SITENAME = ?";
+		
+		try {
+			
+			OracleConnection c = new OracleConnection();
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, name);
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				
+				site = new Sites();
+				 
+				site.setSiteName(rs.getString("siteName"));
+				site.setMainPicture(rs.getString("mainPicture"));
+				site.setLocations(rs.getString("locations"));
+				site.setTimeneed(rs.getInt("timeneed"));
+				
+			}
+		}catch (Exception e) {
+
+			e.printStackTrace();
+			
+		}finally {
+			
+			try {
+				
+				conn.close();
+				
+			} catch (SQLException e) {
+
+				e.printStackTrace();
+			}
+		}
+		
+		return site;
+	}
+
+	@Override
+	public void updateSite(Sites site) {
+		
+		String sql = "UPDATE sites SET siteName =?, mainPicture =?, locations =?, timeneed =? where siteId = ?";
+		OracleConnection c = new OracleConnection();
+		Connection conn=null;
+		try {
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+	
+			ps.setString(1,site.getSiteName());
+			ps.setString(2,site.getMainPicture());
+			ps.setString(3,site.getLocations());
+			ps.setInt(4,site.getTimeneed());
+			ps.setInt(5, site.getSiteId());
+			ps.executeUpdate();
+
+		} catch (ClassNotFoundException | IOException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+
+
+	}
+
+	@Override
+	public void deleteSite(int id) {
+
+
+	}
+
+}

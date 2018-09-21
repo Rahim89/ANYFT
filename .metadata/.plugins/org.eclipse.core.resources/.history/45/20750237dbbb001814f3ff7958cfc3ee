@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Package</title>
+</head>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<body>
+	<div id = "header">
+    <%@include file="header.jsp" %>
+    </div>
+    
+    <div style = "border:1px solid; margin: 0 auto; text-align:center;">
+        <h1>Books Management</h1>
+        <h2>
+            <a href="/new">Add New Tour Package</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="/list">List All ToursPackages</a>
+             
+        </h2>
+    </div>
+    <div style = "border:1px solid; margin: 0 auto; text-align:left;">
+        	 <table>
+            <c:forEach var="tourpackage" items="${packages}">
+                <table style =  margin: 0 auto; text-align:left;">
+                <div>
+                    Name: <c:out value="${tourpackage.name}" />
+                </table>
+                 </div>
+                 <br>
+                 <br>
+                 <div>
+                     <c:out value="${tourpackage.descriptions}" />
+                 </div>
+                 <br>
+                 <br>
+                 <div style = "border:0px solid; margin: 0 auto; text-align:left;">
+                    Itinerary: <p><c:out value="${tourpackage.itineraryDescription}" /></p>
+                 </div>
+                 <br>
+                 <br>
+                 <div style = "border:0px solid; margin: 0 auto; text-align:left;">
+                   Duration: <c:out value="${tourpackage.duration_max}" /> hours
+                 </div >
+                 <br>
+                 <br>  
+                 <div style = "border:0px solid; margin: 0 auto; text-align:left;">
+                   Price:  $<c:out value="${tourpackage.price}" />
+                   <div></div>
+                </div>
+                <br>
+                 <br>
+            </c:forEach>
+      
+         </table>
+    </div>     
+  
+    <div>
+    <%@include file="footer.jsp" %>
+    </div>
+</body>
+	
+
+</html>

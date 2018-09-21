@@ -1,0 +1,12 @@
+package com.springmvc.DAO;
+
+import java.util.List;
+
+import com.springmvc.Beans.PictureBySite;
+
+public interface PictureBySiteDAO {
+	
+	public List<PictureBySite> getAllBySite();
+	
+	
+}

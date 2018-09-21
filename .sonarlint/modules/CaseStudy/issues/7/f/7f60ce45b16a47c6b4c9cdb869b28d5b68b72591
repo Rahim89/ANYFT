@@ -1,0 +1,5 @@
+
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©Ï„¼úÿÿÿÿHÙ5RMINORZ
+CODE_SMELL
+usquid:UselessImportCheck"6Remove this unused import 'com.springmvc.Beans.Sites'.(›ƒ±½øÿÿÿÿHÚ5RMINORZ
+CODE_SMELL

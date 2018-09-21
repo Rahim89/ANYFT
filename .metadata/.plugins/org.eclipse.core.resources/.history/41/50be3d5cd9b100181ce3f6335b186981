@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+
+	<form action="/action_page.php">
+	  <fieldset>
+	    <legend>Personal information:</legend>
+	    User Name:<br>
+	    <input type="text" name="firstname" value="username">
+	    <br>
+	    Password:<br>
+	    <input type="text" name="lastname" value="password">
+	    <br><br>
+	    <input type="submit" value="Submit">
+	  </fieldset>
+	</form>
+
+</body>
+</html>

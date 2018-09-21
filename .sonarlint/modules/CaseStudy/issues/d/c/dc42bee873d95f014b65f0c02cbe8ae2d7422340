@@ -1,0 +1,64 @@
+
+dsquid:S1135š"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHÕ<RINFOZ
+CODE_SMELL
+osquid:S2095_"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(·¦Ã…HÇ<RBLOCKERZBUG
+~squid:S1192h"IDefine a constant instead of duplicating this literal "lastName" 3 times.(¢ ÃÓùÿÿÿÿH¸<RCRITICALZ
+CODE_SMELL
+nsquid:S2259"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHŞ<RMAJORZBUG
+Xsquid:S1148y"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¿<RMINORZVULNERABILITY
+dsquid:S1135¹"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHÙ<RINFOZ
+CODE_SMELL
+Xsquid:S1148<"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¶<RMINORZVULNERABILITY
+zsquid:S1192g"JDefine a constant instead of duplicating this literal "firstName" 3 times.(°š™Hº<RCRITICALZ
+CODE_SMELL
+Xsquid:S1148s"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH½<RMINORZVULNERABILITY
+wsquid:S2095#"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(œ¼ŒÓHß<RBLOCKERZBUG
+}squid:S1192l"HDefine a constant instead of duplicating this literal "country" 3 times.(ÛòŸïøÿÿÿÿHÄ<RCRITICALZ
+CODE_SMELL
+vsquid:S1192j"FDefine a constant instead of duplicating this literal "email" 3 times.(ƒ™ÿHÑ<RCRITICALZ
+CODE_SMELL
+xsquid:S2095Í"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½HÉ<RBLOCKERZBUG
+Ysquid:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÖ<RMINORZVULNERABILITY
+wsquid:S1192i"HDefine a constant instead of duplicating this literal "address" 3 times.(ÜâË+HÚ<RCRITICALZ
+CODE_SMELL
+ˆsquid:S2068‡"U'password' detected in this expression, review this potentially hardcoded credential.(Î®Ë¨HÛ<RBLOCKERZVULNERABILITY
+xsquid:S2095ù"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½H·<RBLOCKERZBUG
+Ysquid:S1148¡"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHİ<RMINORZVULNERABILITY
+Ysquid:S1148´"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHË<RMINORZVULNERABILITY
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ÛûÃHÎ<RMINORZ
+CODE_SMELL
+wsquid:S2095["OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½HÃ<RBLOCKERZBUG
+xsquid:S1192e"IDefine a constant instead of duplicating this literal "userName" 3 times.(„˜úHÔ<RCRITICALZ
+CODE_SMELL
+csquid:S1135x"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHÊ<RINFOZ
+CODE_SMELL
+Ysquid:S1148›"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÂ<RMINORZVULNERABILITY
+Ysquid:S1148à"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÏ<RMINORZVULNERABILITY
+Ysquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÒ<RMINORZVULNERABILITY
+dsquid:S1135 "2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHÌ<RINFOZ
+CODE_SMELL
+Ysquid:S1148Š"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÅ<RMINORZVULNERABILITY
+‡squid:S2293ó"YReplace the type specification in this constructor call with the diamond operator ("<>").(·¨ëœH×<RMINORZ
+CODE_SMELL
+psquid:S2095ú"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(·¦Ã…HØ<RBLOCKERZBUG
+dsquid:S1135³"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHà<RINFOZ
+CODE_SMELL
+psquid:S2095Ñ"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(·¦Ã…Hâ<RBLOCKERZBUG
+Ysquid:S1148è"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÀ<RMINORZVULNERABILITY
+xsquid:S2095®"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½HÜ<RBLOCKERZBUG
+xsquid:S2095Œ"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½HÁ<RBLOCKERZBUG
+msquid:S2259?"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHĞ<RMAJORZBUG
+nsquid:S2259"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHÆ<RMAJORZBUG
+~squid:S1192f"IDefine a constant instead of duplicating this literal "password" 3 times.(Ú½€öüÿÿÿÿHã<RCRITICALZ
+CODE_SMELL
+nsquid:S2259·"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHÓ<RMAJORZBUG
+msquid:S2259v"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿH¾<RMAJORZBUG
+Xsquid:S1148B"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¹<RMINORZVULNERABILITY
+osquid:S20951"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ü ÿóH»<RBLOCKERZBUG
+}squid:S1192k"HDefine a constant instead of duplicating this literal "phoneNo" 3 times.(Ë–ŒùıÿÿÿÿHÍ<RCRITICALZ
+CODE_SMELL
+nsquid:S2259ã"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHá<RMAJORZBUG
+csquid:S1135A"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿH¼<RINFOZ
+CODE_SMELL
+csquid:S1135r"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHÈ<RINFOZ
+CODE_SMELL

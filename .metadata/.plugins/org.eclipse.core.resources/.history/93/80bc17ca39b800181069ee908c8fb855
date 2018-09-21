@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Package</title>
+</head>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<body>
+	<div id = "header">
+    <%@include file="header.jsp" %>
+    </div>
+    
+    <div align="center">
+        <h1>Books Management</h1>
+        <h2>
+            <a href="/new">Add New Tour Package</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="/list">List All ToursPackages</a>
+             
+        </h2>
+    </div>
+    <div align="center">
+        <table border="1" cellpadding="5">
+            <caption><h2>List of Tours Packages</h2></caption>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            <c:forEach var="tourpackage" items="${users}">
+                <tr>
+                    <td><c:out value="${tourpackage.firstName}" /></td>
+                    <td><c:out value="${tourpackage.lastName}" /></td>
+                    <td><c:out value="${tourpackage.address}" /></td>
+                    <td><c:out value="${tourpackage.email}" /></td>
+                    <%-- <td>
+                        <a href="/edit?id=<c:out value='${tourpackage.id}' />">Edit</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="/delete?id=<c:out value='${tourpackage.id}' />">Delete</a>                     
+                    </td> --%>
+                </tr>
+            </c:forEach>
+        </table>
+    </div>     
+  
+    <div>
+    <%@include file="footer.jsp" %>
+    </div>
+</body>
+	
+
+</html>

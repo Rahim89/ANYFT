@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:53:50 -0400] "GET /CaseStudy/login HTTP/1.1" 200 3831
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:53:55 -0400] "GET /CaseStudy/registration HTTP/1.1" 200 19289
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:55:43 -0400] "POST /CaseStudy/User_info HTTP/1.1" 200 19460
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:57:34 -0400] "GET /CaseStudy/login HTTP/1.1" 200 3831
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:57:37 -0400] "GET /CaseStudy/registration HTTP/1.1" 200 19289
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:57:39 -0400] "POST /CaseStudy/User_info HTTP/1.1" 200 19430
+0:0:0:0:0:0:0:1 - - [15/Sep/2018:14:59:24 -0400] "POST /CaseStudy/User_info HTTP/1.1" 200 19463

@@ -1,0 +1,21 @@
+
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÛ§‘Hø;RMINORZ
+CODE_SMELL
+”squid:S3973 "WUse curly braces or indentation to denote the code conditionally executed by this "if".(†Ñï¶ÿÿÿÿÿ8ÖªÑÌß,Hš<RCRITICALZ
+CODE_SMELL
+”squid:S3973¥"WUse curly braces or indentation to denote the code conditionally executed by this "if".(Òž¤úÿÿÿÿ8ÖªÑÌß,H›<RCRITICALZ
+CODE_SMELL
+”squid:S3973ª"WUse curly braces or indentation to denote the code conditionally executed by this "if".(ÁÀŸÈÿÿÿÿÿ8ÖªÑÌß,Hœ<RCRITICALZ
+CODE_SMELL
+squid:S3973¯"WUse curly braces or indentation to denote the code conditionally executed by this "if".(žÅ›‘8ÖªÑÌß,H<RCRITICALZ
+CODE_SMELL
+Žsquid:S3973´"WUse curly braces or indentation to denote the code conditionally executed by this "if".(öð´98ÖªÑÌß,Hž<RCRITICALZ
+CODE_SMELL
+”squid:S3973¹"WUse curly braces or indentation to denote the code conditionally executed by this "if".(‹»¢’ûÿÿÿÿ8ÖªÑÌß,HŸ<RCRITICALZ
+CODE_SMELL
+squid:S3973¾"WUse curly braces or indentation to denote the code conditionally executed by this "if".(¿†¨°8ÖªÑÌß,H <RCRITICALZ
+CODE_SMELL
+squid:S3973Å"WUse curly braces or indentation to denote the code conditionally executed by this "if".(‡Òº‡8ÖªÑÌß,H¡<RCRITICALZ
+CODE_SMELL
+Šsquid:S3776•"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(ÜÑã8ÖªÑÌß,H¢<RCRITICALZ
+CODE_SMELL

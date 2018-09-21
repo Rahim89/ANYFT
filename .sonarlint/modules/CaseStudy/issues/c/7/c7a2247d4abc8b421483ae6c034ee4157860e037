@@ -1,0 +1,32 @@
+
+nsquid:S2259‚"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHê5RMAJORZBUG
+Ysquid:S1148º"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHö5RMINORZVULNERABILITY
+Xsquid:S1148/"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHî5RMINORZVULNERABILITY
+Ysquid:S1148Ÿ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHô5RMINORZVULNERABILITY
+wsquid:S2095I"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½Hã5RBLOCKERZBUG
+Ysquid:S1148À"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH÷5RMINORZVULNERABILITY
+msquid:S22592"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHè5RMAJORZBUG
+nsquid:S2259¢"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHç5RMAJORZBUG
+Xsquid:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHï5RMINORZVULNERABILITY
+xsquid:S2095´"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½Hß5RBLOCKERZBUG
+dsquid:S1135¿"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHå5RINFOZ
+CODE_SMELL
+Ysquid:S1148†"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHó5RMINORZVULNERABILITY
+Xsquid:S1148|"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHò5RMINORZVULNERABILITY
+msquid:S2259Y"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHé5RMAJORZBUG
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ÛûÃHí5RMINORZ
+CODE_SMELL
+xsquid:S2095•"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½HŞ5RBLOCKERZBUG
+Xsquid:S1148["#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHñ5RMINORZVULNERABILITY
+‹squid:S2293A"YReplace the type specification in this constructor call with the diamond operator ("<>").(»à¶ôıÿÿÿÿHÛ5RMINORZ
+CODE_SMELL
+osquid:S2095$"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Ü ÿóHâ5RBLOCKERZBUG
+wsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(œ¼ŒÓHÜ5RBLOCKERZBUG
+osquid:S2095o"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(·¦Ã…Hà5RBLOCKERZBUG
+dsquid:S1135¹"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿHä5RINFOZ
+CODE_SMELL
+nsquid:S2259½"BA "NullPointerException" could be thrown; "conn" is nullable here.(…¤© ÿÿÿÿÿHë5RMAJORZBUG
+Xsquid:S1148V"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHğ5RMINORZVULNERABILITY
+Ysquid:S1148¥"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHõ5RMINORZVULNERABILITY
+osquid:S2095J"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(·¦Ã…Há5RBLOCKERZBUG
+wsquid:S2095m"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½Hİ5RBLOCKERZBUG

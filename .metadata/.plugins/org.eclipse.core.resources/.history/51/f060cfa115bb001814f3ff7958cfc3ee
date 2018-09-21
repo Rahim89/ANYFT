@@ -1,0 +1,34 @@
+package com.springmvc.DAOImpl;
+
+import java.util.List;
+
+import com.springmvc.Beans.TypeLicense;
+import com.springmvc.DAO.TypeLicenseDAO;
+
+public class TypeLicenseDAOImpl implements TypeLicenseDAO {
+
+	@Override
+	public boolean addNewTypeLicense(TypeLicense typeLicense) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<TypeLicense> getAllTypeLicense() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public TypeLicense getTypeLicenseByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateLicense(TypeLicense license) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

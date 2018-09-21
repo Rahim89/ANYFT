@@ -1,0 +1,261 @@
+package com.springmvc.DAOImpl;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+
+import com.springmvc.Beans.Users;
+import com.springmvc.DAO.OracleConnection;
+import com.springmvc.DAO.UsersDAO;
+
+public class UsersDAOImpl extends OracleConnection implements UsersDAO {
+
+	@Override
+	public int addUser(Users user) {
+		
+		int key =0;
+		String sql= "INSERT INTO users(userName, password,firstName,lastName,address,email,phoneNo,country) VALUES(?,?,?,?,?,?,?,?)";
+		Connection conn=null;
+		String[] generatedkey = {"USERID"};
+		try { 
+				OracleConnection c = new OracleConnection();
+				conn = c.getConnection();
+				
+				PreparedStatement ps = conn.prepareStatement(sql,generatedkey);
+				
+				ps.setString(1, user.getUserName());
+				ps.setString(2, HashPassword.hash(user.getPassword()));
+				ps.setString(3, user.getFirstName());
+				ps.setString(4, user.getLastName());
+				ps.setString(5, user.getAddress());
+				ps.setString(6, user.getEmail());
+				ps.setString(7, user.getPhoneNo());
+				ps.setString(8, user.getCountry());
+				
+				
+				
+				ps.executeUpdate();
+				ResultSet rs= ps.getGeneratedKeys();
+				
+				if(rs.next()){
+					
+					key=rs.getInt(1);
+					user.setUserId(key);
+					
+				}
+				
+		}catch (Exception e) {
+			
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return key;
+	}
+
+	@Override
+	public Users getUsersByLastName(String lastName) {
+		
+		Connection conn = null;
+		
+		Users user =null;
+		
+		String sql = "SELECT * FROM USERS WHERE LASTNAME = ?";
+		
+		try {
+			OracleConnection c = new OracleConnection();
+			
+			conn = c.getConnection();
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ps.setString(1, lastName);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				
+				user = new Users();
+				
+				user.setUserName(rs.getString("userName"));
+				user.setPassword(rs.getString("password"));
+				user.setFirstName(rs.getString("firstName"));
+				user.setLastName(rs.getString("lastName"));
+				user.setAddress(rs.getString("address"));
+				user.setEmail(rs.getString("email"));
+				user.setPhoneNo(rs.getString("phoneNo"));
+				user.setCountry(rs.getString("country"));
+				
+				
+				
+			}
+		}catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return user;
+	}
+
+	@Override
+	public void editUser(Users user) {
+		String sql= "UPDATE USERS SET  password=?, firstName = ?, lastName = ?, address = ?, email = ?, phoneNo = ?, country = ? where username=? ";
+		OracleConnection c = new OracleConnection();
+		Connection conn=null;
+		try {
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			
+			ps.setString(1, user.getPassword());
+			ps.setString(2, user.getFirstName());
+			ps.setString(3, user.getLastName());
+			ps.setString(4, user.getAddress());
+			ps.setString(5, user.getEmail());
+			ps.setString(6, user.getCountry());
+			ps.setString(7, user.getPhoneNo());
+			ps.setString(8, user.getUserName());
+			ps.executeUpdate();
+
+		} catch (ClassNotFoundException | IOException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+	@Override
+	public void deleteUser(int userId) {
+		String sql= "DELETE FROM USERS WHERE userId=?";
+		OracleConnection c = new OracleConnection();
+		Connection conn=null;
+		try {
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+	
+			ps.setInt(1, userId);
+			ps.executeUpdate();
+		}catch (ClassNotFoundException | IOException | SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+
+	
+
+	@Override
+	public Users getUsersByUsername(String username) {
+		Connection conn = null;
+		Users user = null;
+		String sql = "SELECT * FROM Users WHERE USERNAME = ?";
+		
+		try {
+			OracleConnection c = new OracleConnection();
+			
+			conn = c.getConnection();
+			
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ps.setString(1, username);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()) {
+				 	user = new Users();
+				 	user.setUserName(rs.getString("userName"));
+					user.setPassword(rs.getString("password"));
+					user.setFirstName(rs.getString("firstName"));
+					user.setLastName(rs.getString("lastName"));
+					user.setAddress(rs.getString("address"));
+					user.setEmail(rs.getString("email"));
+					user.setPhoneNo(rs.getString("phoneNo"));
+					user.setCountry(rs.getString("country"));
+				
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				
+				
+				
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+			
+		}
+		
+		return user;
+	}
+
+	@Override
+	public List<Users> getAllUsers() {
+		Connection conn = null;
+		List<Users> users = new ArrayList<Users>();
+		
+		String sql = "SELECT * FROM USERS";
+		try {
+			OracleConnection c = new OracleConnection();
+			conn = c.getConnection();
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()) {
+				Users user = new Users();
+				
+				user.setUserName(rs.getString("userName"));
+				user.setPassword(rs.getString("password"));
+				user.setFirstName(rs.getString("firstName"));
+				user.setLastName(rs.getString("lastName"));
+				user.setAddress(rs.getString("address"));
+				user.setEmail(rs.getString("email"));
+				user.setPhoneNo(rs.getString("phoneNo"));
+				user.setCountry(rs.getString("country"));
+				
+				users.add(user);
+			}
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return users;
+	}
+
+}

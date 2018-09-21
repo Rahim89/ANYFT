@@ -1,0 +1,15 @@
+127.0.0.1 - - [12/Sep/2018:20:33:41 -0400] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [12/Sep/2018:20:34:15 -0400] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:23 -0400] "GET /CaseStudy/ HTTP/1.1" 200 5625
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:23 -0400] "GET /CaseStudy/img_bandmember.jpg HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:23 -0400] "GET /CaseStudy/img_band_chicago.jpg HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:23 -0400] "GET /CaseStudy/img_band_ny.jpg HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:23 -0400] "GET /CaseStudy/img_band_la.jpg HTTP/1.1" 404 1047
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:29 -0400] "GET /CaseStudy/login HTTP/1.1" 200 3831
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:34:33 -0400] "GET /CaseStudy/registration HTTP/1.1" 200 19234
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:35:46 -0400] "POST /CaseStudy/registrationverification HTTP/1.1" 400 1127
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:20:59:04 -0400] "GET /CaseStudy/tourpackage HTTP/1.1" 200 3827
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:21:05:26 -0400] "GET /CaseStudy/tourpackage HTTP/1.1" 200 3827
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:21:06:10 -0400] "GET /CaseStudy/tourpackage HTTP/1.1" 200 3827
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:21:06:23 -0400] "GET /CaseStudy/login HTTP/1.1" 200 3831
+0:0:0:0:0:0:0:1 - - [12/Sep/2018:21:06:25 -0400] "GET /CaseStudy/tourpackage HTTP/1.1" 200 3827

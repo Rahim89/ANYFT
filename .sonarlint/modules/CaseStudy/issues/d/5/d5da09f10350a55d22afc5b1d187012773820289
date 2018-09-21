@@ -1,0 +1,39 @@
+
+squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(û©ØØ8‡â¯Âß,Hñ6RMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(…˜£?8‡â¯Âß,Hö6RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(ô’Ø8‡â¯Âß,H÷6RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(ºïÈ 8‡â¯Âß,Hý6RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(ôÜÄÙ8‡â¯Âß,Hÿ6RMAJORZ
+CODE_SMELL
+‹squid:UselessImportCheck"ERemove this unused import 'com.springmvc.DAOImpl.TourPackageDAOImpl'.(ÇÖ¢ùÿÿÿÿ8‡â¯Âß,H€7RMINORZ
+CODE_SMELL
+squid:CommentedOutCodeLine<"<This block of commented-out lines of code should be removed.(žñöÏ8‡â¯Âß,Hû6RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( •€Ïøÿÿÿÿ8‡â¯Âß,Hó6RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine:"<This block of commented-out lines of code should be removed.(ß¦¨íøÿÿÿÿ8‡â¯Âß,Hú6RMAJORZ
+CODE_SMELL
+‚squid:UselessImportCheck"<Remove this unused import 'com.springmvc.Beans.TourPackage'.(­”¥Âÿÿÿÿÿ8‡â¯Âß,H‚7RMINORZ
+CODE_SMELL
+squid:CommentedOutCodeLineD"<This block of commented-out lines of code should be removed.(ŒýÊÈ8‡â¯Âß,Hþ6RMAJORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊíçüÿÿÿÿHð6RMINORZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"=Remove this unused import 'com.springmvc.DAO.TourPackageDAO'.(åëæýÿÿÿÿÿ8‡â¯Âß,H7RMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(ñ¨»þÿÿÿÿ8‡â¯Âß,Hø6RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ü‰¶Öùÿÿÿÿ8‡â¯Âß,Hò6RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine#"<This block of commented-out lines of code should be removed.(°¼ûò8‡â¯Âß,Hô6RMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(é°¼8‡â¯Âß,Hõ6RMAJORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine6"<This block of commented-out lines of code should be removed.(Õˆ¡ÿÿÿÿÿ8‡â¯Âß,Hù6RMAJORZ
+CODE_SMELL
+squid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(ô†Äê8‡â¯Âß,Hü6RMAJORZ
+CODE_SMELL

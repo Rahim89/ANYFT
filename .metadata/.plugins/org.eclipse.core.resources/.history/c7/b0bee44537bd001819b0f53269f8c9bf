@@ -1,0 +1,28 @@
+import org.junit.Test;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.springmvc.Beans.Users;
+import com.springmvc.DAO.UsersDAO;
+
+
+public class UsersTest {
+	
+	@Autowired
+	private UsersDAO userDAO;
+	
+	@Test
+	
+	
+	public void testAddUsers() {
+		
+		Users user = new Users();
+		
+		
+		
+		
+	}
+	
+	
+
+}
